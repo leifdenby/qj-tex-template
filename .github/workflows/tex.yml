@@ -1,0 +1,24 @@
+name: qj-template
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    strategy:
+      matrix:
+        platform: [ubuntu-latest] #[ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.platform }}  
+    steps:
+    - uses: actions/checkout@v2
+    - name: Install dependencies
+      run: |
+        sudo apt-get install libfontconfig1-dev libgraphite2-dev libharfbuzz-dev libicu-dev libssl-dev zlib1g-dev
+        cargo install tectonic
+        sudo apt-get install tex-gyre fonts-cmu
+    - name: Compile document
+      run: |
+        tectonic full_article.tex
