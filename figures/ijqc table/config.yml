@@ -1,0 +1,21 @@
+---
+version: 2
+multicolumn: false
+web-width: 500px
+align: center
+float: h!
+grid:
+  rows: 1
+  columns: 1
+  grid_elements:
+  - path: figures/ijqc table/ijqc table.xlsx
+    type: table
+    from:
+    - 1
+    - 1
+    to:
+    - 1
+    - 1
+    url: "/users/3/articles/351136/master/file/figures/ijqc%20table/ijqc%20table.xlsx"
+    folder_url: "/users/3/articles/351136/master/folder/figures/ijqc table"
+    treatFirstLineAsHeader: true
