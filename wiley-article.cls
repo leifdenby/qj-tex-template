@@ -112,7 +112,7 @@
   \RequirePackage[partial=upright]{unicode-math}
   \setmainfont[Ligatures=TeX]{Lato}
   \setsansfont[Ligatures=TeX]{Lato}
-  \setmathfont{TeX Gyre DejaVu Math}
+  \setmathfont{DejaVu Math TeX Gyre}
   \setmathfont[range={\int}]{Latin Modern Math}
   \setmathfont[range=\mathup/{num,latin,Latin,greek,Greek}, Ligatures=TeX]{Lato}
   \setmathfont[range=\mathit/{num,latin,Latin,greek,Greek}, Ligatures=TeX]{Lato Italic}
