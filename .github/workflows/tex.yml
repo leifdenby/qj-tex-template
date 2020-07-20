@@ -18,7 +18,7 @@ jobs:
       run: |
         sudo apt-get install libfontconfig1-dev libgraphite2-dev libharfbuzz-dev libicu-dev libssl-dev zlib1g-dev
         cargo install tectonic
-        sudo apt-get install tex-gyre
+        sudo apt-get install tex-gyre fonts-cmu
     - name: Compile document
       run: |
         tectonic full_article.tex
